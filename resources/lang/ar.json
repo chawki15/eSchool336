@@ -1,0 +1,1055 @@
+{
+  "The :attribute must contain at least one letter." : "يجب أن يحتوي الحقل :attribute على حرف واحد على الأقل.",
+  "The :attribute must contain at least one number." : "يجب أن يحتوي الحقل :attribute على رقم واحد على الأقل.",
+  "The :attribute must contain at least one symbol." : "يجب أن يحتوي الحقل :attribute على رمز واحد على الأقل.",
+  "The :attribute must contain at least one uppercase and one lowercase letter." : "يجب أن يحتوي الحقل :attribute على حرف كبير وحرف صغير على الأقل.",
+  "The given :attribute has appeared in a data leak. Please choose a different :attribute." : "الحقل :attribute الذي تم إدخاله ظهر في تسريب بيانات سابق. يرجى اختيار :attribute مختلف.",
+
+  "login" : "تسجيل الدخول",
+  "username" : "اسم المستخدم",
+  "password" : "كلمة المرور",
+  "forgot_password" : "هل نسيت كلمة المرور؟",
+  "invalid_credentials" : "اسم المستخدم أو كلمة المرور غير صحيحة",
+
+  "dashboard" : "لوحة التحكم",
+  "general_settings" : "الإعدادات العامة",
+  "system_settings" : "إعدادات النظام",
+  "role_permission" : "الأدوار والصلاحيات",
+
+  "copyright" : "حقوق النشر",
+  "all_rights_reserved" : "جميع الحقوق محفوظة",
+
+  "school_name" : "اسم المؤسسة",
+  "school_address" : "العنوان",
+  "school_phone" : "الهاتف",
+  "school_email" : "البريد الإلكتروني",
+
+  "time_zone" : "المنطقة الزمنية",
+  "date_formate" : "تنسيق التاريخ",
+  "time_formate" : "تنسيق الوقت",
+  "color" : "اللون",
+
+  "follow_us" : "تابعنا",
+  "medium" : "متوسط",
+
+  "manage_medium" : "إدارة المرحلة",
+  "create_medium" : "إضافة مرحلة",
+  "list_medium" : "قائمة المراحل",
+  "edit_medium" : "تعديل المرحلة",
+
+  "user_registered_successfully" : "تم تسجيل المستخدم بنجاح",
+
+  "teacher" : "المعلم",
+  "manage_teacher" : "إدارة المعلمين",
+  "create_teacher" : "إضافة معلم",
+  "list_teacher" : "قائمة المعلمين",
+  "edit_teacher" : "تعديل المعلم",
+
+  "no" : "لا",
+  "id" : "المعرف",
+  "name" : "الاسم",
+  "email" : "البريد الإلكتروني",
+  "mobile" : "الهاتف",
+  "dob" : "تاريخ الميلاد",
+  "image" : "الصورة",
+  "qualification" : "المؤهل",
+  "action" : "الإجراء",
+
+  "role_management" : "إدارة الأدوار",
+  "show" : "عرض",
+  "show_role" : "عرض الدور",
+  "back" : "رجوع",
+  "permission" : "الصلاحيات",
+  "submit" : "إرسال",
+  "cancel" : "إلغاء",
+
+  "delete_title" : "هل أنت متأكد؟",
+  "confirm_message" : "لن تتمكن من التراجع عن هذا!",
+  "yes_delete" : "نعم، احذف",
+  "yes_change_it_default" : "نعم، أعده للوضع الافتراضي",
+
+  "academics" : "الشؤون الأكاديمية",
+  "manage" : "إدارة",
+  "create" : "إضافة",
+  "edit" : "تعديل",
+  "list" : "قائمة",
+
+  "section" : "الشعبة",
+  "class" : "القسم",
+  "subject" : "المادة",
+  "subject_group" : "مجموعة المواد",
+  "subject_code" : "رمز المادة",
+
+  "bg_color" : "لون الخلفية",
+  "upload" : "رفع",
+  "type" : "النوع",
+
+  "data_fetch_successfully" : "تم جلب البيانات بنجاح",
+  "data_store_successfully" : "تم حفظ البيانات بنجاح",
+  "data_update_successfully" : "تم تحديث البيانات بنجاح",
+  "data_delete_successfully" : "تم حذف البيانات بنجاح",
+
+  "error_occurred" : "حدث خطأ! يرجى المحاولة مرة أخرى لاحقًا.",
+
+  "created_at" : "تاريخ الإنشاء",
+  "updated_at" : "تاريخ التحديث",
+
+  "no_permission_message" : "ليس لديك الصلاحيات الكافية.",
+
+  "assign_class_subject" : "تعيين مواد للقسم",
+  "select_elective_subjects" : "اختيار المواد الاختيارية",
+  "elective_subjects" : "المواد الاختيارية",
+  "total_selectable_subjects" : "إجمالي المواد القابلة للاختيار",
+
+  "assign_class_teacher" : "تعيين معلم للقسم",
+
+  "parents" : "أولياء الأمور",
+  "session_years" : "السنة الدراسية",
+  "status" : "الحالة",
+
+  "admission_no" : "رقم التسجيل",
+  "roll_no" : "رقم الترتيب",
+  "caste" : "الطائفة",
+  "religion" : "الديانة",
+  "admission_date" : "تاريخ القبول",
+  "blood_group" : "فصيلة الدم",
+  "height" : "الطول",
+  "weight" : "الوزن",
+
+  "father" : "الأب",
+  "mother" : "الأم",
+  "occupation" : "المهنة",
+  "is_new_admission" : "تسجيل جديد",
+  "category" : "الفئة",
+  "user_id" : "معرف المستخدم",
+
+  "core_subject" : "المواد الأساسية",
+  "students" : "الطلاب",
+  "student_admission" : "تسجيل الطلاب",
+  "student_category" : "فئات الطلاب",
+
+  "add_bulk_data" : "إضافة بيانات جماعية",
+  "assign" : "تعيين",
+
+  "timetable" : "الجدول الزمني",
+  "create_timetable" : "إنشاء جدول",
+  "class_timetable" : "جدول القسم",
+  "teacher_timetable" : "جدول المعلم",
+
+  "subject_lesson" : "درس المادة",
+  "create_lesson" : "إضافة درس",
+  "create_topic" : "إضافة موضوع",
+
+  "lesson_alredy_exists" : "الدرس موجود بالفعل",
+  "topic_alredy_exists" : "الموضوع موجود بالفعل",
+
+  "student_assignment" : "واجبات الطلاب",
+  "create_assignment" : "إضافة واجب",
+  "assignment_submission" : "تسليم الواجب",
+
+  "attendance" : "الحضور",
+  "add_attendance" : "إضافة حضور",
+  "view_attendance" : "عرض الحضور",
+
+  "announcement" : "إعلان",
+  "exam" : "امتحان",
+  "create_exam" : "إنشاء امتحان",
+  "create_exam_timetable" : "إنشاء جدول الامتحان",
+  "upload_exam_result" : "رفع نتائج الامتحان",
+
+  "select" : "اختيار",
+  "select_class_section" : "اختيار القسم",
+
+  "father_email" : "بريد الأب",
+  "mother_email" : "بريد الأم",
+
+  "no_data_found" : "لا توجد بيانات.",
+
+  "first_name" : "الاسم الأول",
+  "last_name" : "اسم العائلة",
+
+  "current_address" : "العنوان الحالي",
+  "permanent_address" : "العنوان الدائم",
+
+  "guardian" : "الوصي",
+  "parent_guardian_details" : "بيانات ولي الأمر",
+  "guardian_details" : "بيانات الوصي",
+
+  "gender" : "الجنس",
+  "male" : "ذكر",
+  "female" : "أنثى",
+
+  "date" : "التاريخ",
+  "select_lesson" : "اختيار الدرس",
+
+  "not_assigned" : "غير معين",
+  "complete" : "مكتمل",
+  "incomplete" : "غير مكتمل",
+
+  "selected_subjects" : "المواد المختارة",
+  "select_status" : "اختيار الحالة",
+
+  "assign_elective_subjects" : "تعيين المواد الاختيارية",
+  "select_elective_group" : "اختيار مجموعة اختيارية",
+  "choose_an_elective_group" : "اختر مجموعة اختيارية",
+
+  "save_assignment" : "حفظ الواجب",
+  "available_subjects" : "المواد المتاحة",
+
+  "topic_name" : "اسم الموضوع",
+  "topic_description" : "وصف الموضوع",
+
+  "select_subject" : "اختيار المادة",
+  "class_section" : "القسم",
+
+  "description" : "الوصف",
+  "loading" : "جارٍ التحميل...",
+  "no_subjects_found" : "لا توجد مواد",
+  "error_loading_subjects" : "خطأ أثناء تحميل المواد.",
+
+  "view" : "عرض",
+  "criteria" : "المعايير",
+
+  "lesson" : "درس",
+  "lesson_name" : "اسم الدرس",
+  "lesson_description" : "وصف الدرس",
+
+  "files" : "الملفات",
+  "file_name" : "اسم الملف",
+  "file_upload" : "رفع ملف",
+  "video_upload" : "رفع فيديو",
+
+  "youtube_link" : "رابط يوتيوب",
+  "other_link" : "رابط آخر",
+
+  "student_id" : "معرف الطالب",
+
+  "holiday_list" : "قائمة العطل",
+  "assignment" : "واجب",
+  "assignment_name" : "اسم الواجب",
+  "assignment_instructions" : "تعليمات الواجب",
+
+  "last_submission_date" : "آخر تاريخ للتسليم",
+  "points" : "النقاط",
+
+  "resubmission_allowed" : "إعادة التسليم مسموحة",
+  "extra_days_for_resubmission" : "أيام إضافية لإعادة التسليم",
+
+  "thumbnail" : "صورة مصغرة",
+  "holiday" : "عطلة",
+  "title" : "العنوان",
+  "note" : "ملاحظة",
+  "due_date" : "تاريخ الاستحقاق",
+
+  "resubmission" : "إعادة التسليم",
+  "instructions" : "التعليمات",
+
+  "student_name" : "اسم الطالب",
+  "accept" : "قبول",
+  "reject" : "رفض",
+
+  "assign_to" : "تعيين إلى",
+  "for_all" : "للجميع",
+
+  "sliders" : "السلايدر",
+  "link" : "الرابط",
+  "start_date" : "تاريخ البداية",
+  "end_date" : "تاريخ النهاية",
+
+  "are_you_sure" : "هل أنت متأكد؟",
+  "yes" : "نعم",
+
+  "close" : "إغلاق",
+  "general" : "عام",
+
+  "publish" : "نشر",
+  "or" : "أو",
+
+  "privacy_policy" : "سياسة الخصوصية",
+  "contact_us" : "اتصل بنا",
+  "about_us" : "من نحن",
+
+  "reset_password" : "إعادة تعيين كلمة المرور",
+  "change_password" : "تغيير كلمة المرور",
+
+  "old_password" : "كلمة المرور القديمة",
+  "new_password" : "كلمة المرور الجديدة",
+  "confirm_password" : "تأكيد كلمة المرور",
+
+  "language_settings" : "إعدادات اللغة",
+  "language_name" : "اسم اللغة",
+  "language_code" : "رمز اللغة",
+
+  "role" : "الدور",
+  "app_settings" : "إعدادات التطبيق",
+
+  "home" : "الرئيسية",
+  "view_all" : "عرض الكل",
+  "view_details" : "عرض التفاصيل",
+
+  "admin_login" : "تسجيل دخول الإدارة",
+  "roles" : "الأدوار",
+
+  "schedule" : "الجدول",
+  "google_map_link" : "رابط خرائط Google",
+  "get_the_link_from_google_map_with_embed_url_and_paste_only_src_from_it" : "احصل على الرابط من خرائط Google باستخدام رابط التضمين (Embed) ثم الصق قيمة src فقط.",
+  "sender_id" : "معرف المرسل",
+  "firebase_project_id" : "معرف مشروع Firebase",
+  "setting" : "الإعداد",
+  "service_account_file" : "ملف حساب الخدمة",
+  "read_more" : "اقرأ المزيد",
+  "for" : "لـ",
+  "fields" : "الحقول",
+
+  "student_custom_field_list" : "قائمة الحقول المخصصة للطلاب",
+  "parent_custom_field_list" : "قائمة الحقول المخصصة لأولياء الأمور",
+  "teacher_custom_field_list" : "قائمة الحقول المخصصة للمعلمين",
+
+  "generate" : "إنشاء",
+  "card" : "بطاقة",
+  "header_color" : "لون الترويسة",
+  "footer_color" : "لون التذييل",
+  "header_footer_text_color" : "لون نص الترويسة والتذييل",
+  "layout_type" : "نوع التخطيط",
+  "vertical" : "عمودي",
+  "horizontal" : "أفقي",
+  "background_image" : "صورة الخلفية",
+  "profile_image_style" : "نمط صورة الملف الشخصي",
+  "signature" : "التوقيع",
+  "select_fields" : "اختيار الحقول",
+  "layout_spacing" : "المسافات في التخطيط",
+  "card_width" : "عرض البطاقة",
+  "card_height" : "ارتفاع البطاقة",
+  "mm" : "ملم",
+  "round" : "دائري",
+  "squre" : "مربع",
+
+  "settings_not_found" : "الإعدادات غير موجودة",
+  "gr_no" : "رقم GR",
+  "session_year" : "السنة الدراسية",
+
+  "bonafide" : "شهادة حسن السيرة",
+  "leaving" : "مغادرة",
+  "certificate" : "شهادة",
+  "reason" : "السبب",
+  "valid_upto" : "صالحة حتى",
+  "promoted_to" : "تمت الترقية إلى",
+  "any_other" : "أخرى",
+  "remark" : "ملاحظة",
+  "general_conduct" : "السلوك العام",
+  "result" : "النتيجة",
+
+  "select_exam_you_want_to_add_in_result" : "اختر الامتحان الذي تريد إضافته إلى النتيجة",
+
+  "system_already_updated" : "النظام محدث بالفعل",
+  "your_version_update_nearest" : "يرجى تحديث أقرب إصدار أولًا",
+  "invalid_zip_try_again" : "ملف غير صالح، يرجى المحاولة مرة أخرى",
+
+  "all" : "الكل",
+  "select_teacher" : "اختيار معلم",
+  "student_bulk_import" : "استيراد جماعي للطلاب",
+
+  "grade" : "الدرجة",
+  "starting_range" : "النطاق الابتدائي",
+  "ending_range" : "النطاق النهائي",
+
+  "exam_timetable_does_not_exists" : "جدول الامتحانات غير موجود",
+  "exam_marks" : "درجات الامتحان",
+  "exam_published" : "تم نشر الامتحان",
+
+  "update_profile" : "تحديث الملف الشخصي",
+  "default" : "افتراضي",
+  "default_session_year_cannot_delete" : "لا يمكن حذف السنة الدراسية الافتراضية",
+
+  "percentage" : "النسبة المئوية",
+  "update" : "تحديث",
+
+  "add_email_configuration" : "إضافة إعدادات البريد الإلكتروني",
+  "email_configuration_verification" : "التحقق من إعدادات البريد الإلكتروني",
+  "email_sent_successfully" : "تم إرسال البريد الإلكتروني بنجاح",
+  "invalid_email" : "بريد إلكتروني غير صالح",
+
+  "exam_not_completed_yet" : "الامتحان لم يكتمل بعد",
+  "marks_are_not_submitted" : "لم يتم إدخال الدرجات",
+
+  "download_dummy_file" : "تحميل ملف تجريبي",
+  "first_download_dummy_file_and_convert_to_csv_file_then_upload_it" : "قم أولًا بتحميل الملف التجريبي وتحويله إلى CSV ثم رفعه",
+
+  "grades_data_does_not_exists" : "بيانات الدرجات غير موجودة",
+  "subject_already_exists" : "المادة موجودة بالفعل",
+
+  "click_here_to_remove_class_teacher" : "اضغط هنا لإزالة معلم القسم",
+
+  "fees" : "الرسوم",
+  "total" : "الإجمالي",
+  "enter" : "إدخال",
+  "amount" : "المبلغ",
+  "paid" : "مدفوع",
+
+  "classes" : "الأقسام",
+  "mode" : "الطريقة",
+  "transaction_id" : "معرف العملية",
+  "cheque_no" : "رقم الشيك",
+  "pay" : "دفع",
+  "cash" : "نقدًا",
+  "cheque" : "شيك",
+
+  "payment_gateways" : "بوابات الدفع",
+  "enable" : "تفعيل",
+  "disable" : "تعطيل",
+  "configuration" : "الإعدادات",
+
+  "currency_code" : "رمز العملة",
+  "secret_key" : "المفتاح السري",
+  "api_key" : "مفتاح API",
+
+  "change_every_time_when_session_year_is_changed" : "يتغير في كل مرة تتغير فيها السنة الدراسية",
+
+  "cannot_delete_beacuse_data_is_associated_with_other_data" : "لا يمكن الحذف لارتباط البيانات ببيانات أخرى",
+  "delete_warning" : "لن تتمكن من التراجع عن هذا الإجراء",
+
+  "transactions" : "المعاملات",
+  "logs" : "السجلات",
+  "online" : "عبر الإنترنت",
+
+  "payment_status" : "حالة الدفع",
+  "success" : "ناجح",
+  "failed" : "فشل",
+  "pending" : "قيد الانتظار",
+
+  "save" : "حفظ",
+
+  "marks" : "العلامات",
+  "delete" : "حذف",
+  "clear" : "مسح",
+  "generate_pdf" : "إنشاء PDF",
+
+  "language" : "اللغة",
+  "code" : "الرمز",
+
+  "boys" : "ذكور",
+  "girls" : "إناث",
+
+  "pass" : "ناجح",
+  "fail" : "راسب",
+
+  "active" : "نشط",
+  "inactive" : "غير نشط",
+
+  "notifications" : "الإشعارات",
+
+  "leave" : "إجازة",
+  "total_leave_per_month" : "إجمالي الإجازات في الشهر",
+
+  "report" : "تقرير",
+
+  "today" : "اليوم",
+  "tomorrow" : "غدًا",
+  "upcoming" : "القادم",
+
+  "apply" : "تقديم",
+  "approved" : "مقبول",
+  "rejected" : "مرفوض",
+
+  "cache_clear" : "مسح الكاش",
+
+  "January" : "يناير",
+  "February" : "فبراير",
+  "March" : "مارس",
+  "April" : "أبريل",
+  "May" : "مايو",
+  "June" : "يونيو",
+  "July" : "يوليو",
+  "August" : "أغسطس",
+  "September" : "سبتمبر",
+  "October" : "أكتوبر",
+  "November" : "نوفمبر",
+  "December" : "ديسمبر",
+
+  "YES" : "نعم",
+  "NO" : "لا",
+
+  "core_subject_compulsory" : "المواد الأساسية هي مواد إجبارية.",
+  "remove_core_subject" : "حذف مادة أساسية",
+  "add_new_core_subject" : "إضافة مادة أساسية جديدة",
+
+  "elective_subject_choiceable" : "المواد الاختيارية هي المواد التي يملك الطالب حرية اختيارها من بين المواد المتاحة.",
+  "add_new_elective_subject" : "إضافة مادة اختيارية جديدة",
+
+  "Please Wait" : "يرجى الانتظار",
+  "Theory" : "نظري",
+  "Practical" : "تطبيقي",
+
+  "Kindly contact the school admin to configure Leave Settings for the current session year" :
+  "يرجى التواصل مع إدارة المدرسة لضبط إعدادات الإجازات للسنة الدراسية الحالية",
+
+  "Month is already Occupied" : "هذا الشهر مستخدم بالفعل",
+  "Duplicate values are not allowed" : "القيم المكررة غير مسموح بها",
+
+  "add_new_files" : "إضافة ملفات جديدة",
+  "fcm_key" : "مفتاح FCM",
+  "fcm_server_key" : "مفتاح خادم FCM",
+  "select_class" : "اختيار القسم",
+  "has_elective_subject" : "يحتوي على مواد اختيارية",
+  "elective_subject" : "المواد الاختيارية",
+  "group" : "المجموعة",
+  "upload_new_files" : "رفع ملفات جديدة",
+  "old_files" : "الملفات القديمة",
+
+  "exam_name" : "اسم الامتحان",
+  "exam_description" : "وصف الامتحان",
+  "total_marks" : "العلامة الكاملة",
+  "passing_marks" : "علامة النجاح",
+  "obtained_marks" : "العلامة المحصل عليها",
+  "start_time" : "وقت البداية",
+  "end_time" : "وقت النهاية",
+  "exam_result" : "نتيجة الامتحان",
+  "teacher_review" : "مراجعة المعلم",
+
+  "email_configuration" : "إعدادات البريد الإلكتروني",
+  "mail_mailer" : "خدمة الإرسال",
+  "mail_host" : "الخادم",
+  "mail_port" : "المنفذ",
+  "mail_username" : "البريد الإلكتروني",
+  "mail_password" : "كلمة المرور",
+  "mail_encryption" : "التشفير",
+  "mail_send_from" : "الإرسال من",
+
+  "student_details" : "بيانات الطالب",
+  "assign_new_student_class" : "تعيين قسم جديد للطالب",
+  "terms_condition" : "الشروط والأحكام",
+
+  "promote_student" : "ترقية الطالب",
+  "promote_students_in_next_session" : "ترقية الطالب إلى السنة القادمة",
+  "promote_in" : "الترقية إلى",
+  "promote_class" : "ترقية القسم",
+
+  "upload_file" : "ملف اللغة",
+  "download_sample" : "تحميل ملف نموذجي",
+
+  "gr_number" : "رقم GR",
+  "horizontal_logo" : "الشعار الأفقي",
+  "vertical_logo" : "الشعار العمودي",
+  "favicon" : "أيقونة الموقع",
+
+  "student_parent_app_settings" : "إعدادات تطبيق الطالب / ولي الأمر",
+  "teacher_app_settings" : "إعدادات تطبيق المعلم",
+  "app_link" : "رابط التطبيق",
+  "ios_app_link" : "رابط تطبيق iOS",
+  "app_version" : "إصدار التطبيق (أندرويد)",
+  "ios_app_version" : "إصدار التطبيق (iOS)",
+  "force_app_update" : "إجبار تحديث التطبيق",
+  "app_maintenance" : "وضع الصيانة",
+  "school_tagline" : "شعار المؤسسة",
+  "noticeboard" : "لوحة الإعلانات",
+
+  "current_version" : "الإصدار الحالي",
+  "current_class" : "القسم الحالي",
+  "current_session" : "السنة الحالية",
+  "promoting_to_session" : "الترقية إلى السنة",
+  "repeat_in_same_class" : "إعادة في نفس القسم",
+  "system_update_successfully" : "تم تحديث النظام بنجاح",
+
+  "something_wrong_try_again" : "حدث خطأ ما! يرجى المحاولة لاحقًا",
+  "are_you_sure_you_want_to_reset_password" : "هل أنت متأكد من إعادة تعيين كلمة المرور؟",
+  "confirm_reset_password" : "تأكيد إعادة تعيين كلمة المرور",
+  "continue?" : "متابعة؟",
+
+  "include" : "تضمين",
+  "installment" : "قسط",
+  "in_percentage_%" : "بالنسبة المئوية (%)",
+
+  "name_is_required_at_row" : "الاسم مطلوب في الصف:",
+  "due_date_should_be_date_at_row" : "يجب أن يكون تاريخ الاستحقاق تاريخًا في الصف:",
+  "due_date_should_be_after_or_equal_session_year_start_date_at_row" : "يجب أن يكون تاريخ الاستحقاق بعد أو يساوي بداية السنة الدراسية في الصف:",
+  "due_date_should_be_before_or_equal_session_year_end_date_at_row" : "يجب أن يكون تاريخ الاستحقاق قبل أو يساوي نهاية السنة الدراسية في الصف:",
+  "due_charges_required_at_row" : "الرسوم المستحقة مطلوبة في الصف:",
+  "due_charges_should_be_number_at_row" : "يجب أن تكون الرسوم المستحقة رقمًا في الصف:",
+
+  "add_new_data" : "إضافة بيانات جديدة",
+  "partial_paid" : "مدفوع جزئيًا",
+  "compulsory" : "إجباري",
+  "optional" : "اختياري",
+
+  "due_date_on" : "تاريخ الاستحقاق",
+  "charges" : "الرسوم",
+  "paid_on" : "تم الدفع في",
+  "pay_in_installment" : "الدفع بالتقسيط",
+
+  "bg_color_only_hex_code" : "لون الخلفية (رمز Hex فقط)",
+  "class_with_stream_already_exists" : "القسم مع الشعبة موجود بالفعل",
+
+  "absent" : "غائب",
+  "present" : "حاضر",
+
+  "roll_number_not_available" : "رقم الترتيب غير موجود",
+  "first_download_dummy_file_and_add_attendance_then_upload_it" : "قم أولًا بتحميل الملف النموذجي وإضافة الحضور ثم رفعه.",
+  "add_attendance_on_type_column_0_for_(absent)_and_1_for_(present)" : "أدخل الحضور في عمود النوع: 0 للغائب و1 للحاضر.",
+
+  "top_rankers" : "الأوائل",
+  "class_name" : "اسم القسم",
+  "roll_number_is_assigned_already" : "رقم الترتيب مُعيَّن مسبقًا",
+
+  "login_image" : "صورة خلفية تسجيل الدخول",
+  "parents_details" : "بيانات أولياء الأمور",
+
+  "teacher_create" : "إضافة معلم جديد",
+  "teacher_details" : "بيانات المعلم",
+
+  "admission" : "القبول",
+  "custom_fields" : "حقول مخصصة",
+  "required" : "إجباري",
+  "form_fields" : "حقول النموذج",
+  "preview" : "معاينة",
+
+  "rank" : "الترتيب",
+  "add_new_option" : "إضافة خيار جديد",
+  "draggable_rows_notes" : "ملاحظة: يمكنك تغيير ترتيب الصفوف بالسحب",
+
+  "all_users" : "جميع المستخدمين",
+  "specific_user" : "مستخدم محدد",
+
+  "url" : "الرابط",
+  "send_to" : "إرسال إلى",
+  "notification" : "إشعار",
+  "user" : "مستخدم",
+  "message" : "الرسالة",
+  "notification_sent_successfully" : "تم إرسال الإشعار بنجاح",
+
+  "session_year_id" : "معرف السنة الدراسية",
+  "feedback" : "ملاحظات",
+  "edit_fees" : "تعديل الرسوم",
+  "signout" : "تسجيل الخروج",
+
+  "message_sent_successfully" : "تم إرسال الرسالة بنجاح",
+  "email_not_send" : "تم تسجيل المستخدم بنجاح، لكن لم يتم إرسال البريد.",
+  "email_send_failed" : "فشل إرسال البريد الإلكتروني.",
+
+  "demo_mode" : "وضع التجربة",
+  "on" : "تشغيل",
+  "off" : "إيقاف",
+
+  "payment_gateway" : "بوابة الدفع",
+  "currency_symbol" : "رمز العملة",
+
+  "total_teachers" : "إجمالي المعلمين",
+  "total_students" : "إجمالي الطلاب",
+  "total_parents" : "إجمالي أولياء الأمور",
+
+  "sort_by" : "ترتيب حسب",
+  "duration" : "المدة",
+  "exam_key" : "مفتاح الامتحان",
+
+  "question" : "السؤال",
+  "questions" : "الأسئلة",
+  "answer" : "الإجابة",
+  "add" : "إضافة",
+
+  "invalid_exam_key" : "مفتاح الامتحان غير صالح",
+  "student_already_attempted_exam" : "الطالب قام بمحاولة الامتحان مسبقًا",
+
+  "online_payment_mode" : "الدفع الإلكتروني",
+
+  "old_roll_no" : "رقم الترتيب القديم",
+  "new_roll_no" : "رقم الترتيب الجديد",
+  "yes_change_it" : "نعم، غيّره",
+
+  "grant_permission_to_manage_students_parents" : "منح صلاحية إدارة الطلاب وأولياء الأمور",
+  "note_for_permission_of_student_manage" : "ملاحظة: عند منح صلاحية إدارة الطلاب وأولياء الأمور للمعلم، سيتمكن المعلم من إدارة بيانات الطلاب وأولياء أمورهم.",
+  "yes_unckeck" : "نعم! إلغاء التحديد",
+
+  "exams" : "الامتحانات",
+  "change_password_title" : "عنوان تغيير كلمة المرور",
+  "confirm_change_message" : "رسالة تأكيد التغيير",
+
+  "online_exam_based_on" : "الامتحان الإلكتروني يعتمد على",
+  "class_and_class_section_exam_info" : "القسم: سيظهر الامتحان الإلكتروني لجميع شعب القسم، أما الشعبة: فسيظهر الامتحان لشعبة محددة فقط",
+  "class_required_when_online_exam_is_class_based" : "القسم مطلوب عند اعتماد الامتحان الإلكتروني على القسم",
+  "class_section_required_when_online_exam_is_class_section_based" : "الشعبة مطلوبة عند اعتماد الامتحان الإلكتروني على الشعبة",
+  "subject_required" : "المادة مطلوبة",
+  "title_required" : "العنوان مطلوب",
+  "exam_key_required" : "مفتاح الامتحان مطلوب",
+  "duration_required" : "المدة مطلوبة",
+  "start_date_required" : "تاريخ البداية مطلوب",
+  "end_date_required" : "تاريخ النهاية مطلوب",
+  "exam_key_already_taken" : "مفتاح الامتحان مستخدم مسبقًا",
+  "duration_should_be_greater_than_or_equal_to_1" : "يجب أن تكون المدة أكبر من أو تساوي 1",
+  "end_date_should_be_date_after_start_date" : "يجب أن يكون تاريخ النهاية بعد تاريخ البداية",
+  "passing_marks_should_less_than_or_equal_to_total_marks" : "يجب أن تكون علامة النجاح أقل من أو تساوي العلامة الكاملة",
+  "end_time_should_be_greater_than_start_time" : "يجب أن يكون وقت الانتهاء بعد وقت البدء",
+
+  "error_mail_sending" : "خطأ في إرسال البريد الإلكتروني",
+
+  "shift" : "الدوام",
+  "shift_name" : "اسم الدوام",
+  "starting_time" : "وقت البداية",
+  "ending_time" : "وقت النهاية",
+
+  "streams" : "المسارات",
+  "result_status" : "حالة النتيجة",
+
+  "continue_with_school" : "الاستمرار مع المدرسة؟",
+  "no_leaving" : "لا (مغادرة)",
+
+  "promote_to" : "ترقية إلى",
+  "choose_next_class" : "اختر القسم التالي",
+
+  "new" : "جديد",
+  "custom" : "مخصص",
+
+  "holiday_days" : "أيام العطل",
+  "total_leave" : "إجمالي الإجازات",
+
+  "is_student_can_pay_fees" : "هل يمكن للطالب دفع الرسوم",
+  "compulsory_fee_payment_mode" : "طريقة دفع الرسوم الإلزامية",
+
+  "casual_leave" : "إجازة عادية",
+  "leave_without_pay" : "إجازة بدون أجر",
+
+  "allocated" : "مخصص",
+  "used" : "مستخدم",
+  "remaining" : "متبقي",
+
+  "month" : "الشهر",
+  "from_date" : "من تاريخ",
+  "to_date" : "إلى تاريخ",
+
+  "attachments" : "المرفقات",
+  "upload_multiple_files" : "رفع عدة ملفات",
+
+  "no_exam_timetable_data_found" : "لا توجد بيانات لجدول الامتحانات",
+
+  "The dates you have chosen are already allocated as holidays select different dates." : "التواريخ التي اخترتها مخصصة بالفعل كعطل، يرجى اختيار تواريخ مختلفة.",
+
+  "free_app_use_date" : "تاريخ الاستخدام المجاني للتطبيق",
+  "submission" : "التسليم",
+
+  "chat_settings" : "إعدادات الدردشة",
+  "max_files_upload" : "الحد الأقصى لعدد الملفات",
+  "max_file_size" : "الحد الأقصى لحجم الملف",
+  "max_characters" : "الحد الأقصى للأحرف",
+  "automatically_messages_removed_days" : "حذف الرسائل تلقائيًا بعد (أيام)",
+  "delete_messages" : "حذف الرسائل",
+  "automatically" : "تلقائيًا",
+  "manually" : "يدويًا",
+
+  "no_class_section_assigned" : "لم يتم تعيين أي شعبة.",
+
+  "leave_type" : "نوع الإجازة",
+  "Class Teacher" : "معلم القسم",
+  "--Please" : "--الرجاء",
+
+  "A fresh verification link has been sent to your email address." : "تم إرسال رابط تحقق جديد إلى بريدك الإلكتروني.",
+  "Add Default Values" : "إضافة القيم الافتراضية",
+  "Add New Class Teacher" : "إضافة معلم قسم جديد",
+
+  "Before proceeding, please check your email for a verification link." : "قبل المتابعة، يرجى التحقق من بريدك الإلكتروني للحصول على رابط التحقق.",
+
+  "By Changing this Semester setting, your existing data related to this class will be Auto Deleted" : "بتغيير إعدادات الفصل الدراسي، سيتم حذف جميع البيانات المرتبطة بهذا القسم تلقائيًا",
+
+  "CL" : "إجازة عادية",
+  "LWP" : "إجازة بدون أجر",
+
+  "Checkbox" : "مربع اختيار",
+  "Class Subject" : "مواد القسم",
+  "Confirm Password" : "تأكيد كلمة المرور",
+
+  "Cron Job URL" : "رابط مهمة Cron",
+  "Current Class Teachers" : "معلمو القسم الحاليون",
+  "Default Values" : "القيم الافتراضية",
+
+  "Download Our School Apps!" : "حمّل تطبيقات مدرستنا!",
+  "Dropdown" : "قائمة منسدلة",
+
+  "Educational Programs" : "البرامج التعليمية",
+  "Email Address" : "عنوان البريد الإلكتروني",
+
+  "Exam & Marks" : "الامتحانات والعلامات",
+
+  "File Upload" : "رفع ملف",
+
+  "Forbidden" : "ممنوع",
+  "Forgot Your Password?" : "هل نسيت كلمة المرور؟",
+  "Got a Question?" : "لديك سؤال؟",
+
+  "If you did not receive the email" : "إذا لم تستلم البريد الإلكتروني",
+
+  "Include Semesters" : "تضمين الفصول الدراسية",
+  "Is RTL" : "من اليمين إلى اليسار",
+
+  "Lesson & Topic" : "الدرس والموضوع",
+
+  "Logout" : "تسجيل الخروج",
+
+  "No data found" : "لا توجد بيانات",
+  "Not Found" : "غير موجود",
+
+  "Numeric Values" : "قيم رقمية",
+
+  "Page Expired" : "انتهت صلاحية الصفحة",
+  "Payment Required" : "الدفع مطلوب",
+
+  "Please" : "الرجاء",
+  "Please Select" : "يرجى الاختيار",
+
+  "Register" : "تسجيل",
+  "Reset Password" : "إعادة تعيين كلمة المرور",
+
+  "Server Error" : "خطأ في الخادم",
+  "Service Unavailable" : "الخدمة غير متوفرة",
+
+  "Showing" : "عرض",
+
+  "Student Registration Form" : "نموذج تسجيل الطالب",
+  "Teacher ID" : "معرف المعلم",
+
+  "Textarea" : "حقل نصي",
+
+  "Too Many Requests" : "طلبات كثيرة جدًا",
+  "Unauthorized" : "غير مصرح",
+
+  "Verify Your Email Address" : "تأكيد عنوان بريدك الإلكتروني",
+
+  "accepted" : "مقبول",
+  "application_status" : "حالة الطلب",
+
+  "attendance_report" : "تقرير الحضور",
+
+  "contact" : "اتصال",
+
+  "create_new_role" : "إنشاء دور جديد",
+
+  "details" : "التفاصيل",
+
+  "filter" : "تصفية",
+
+  "messages" : "الرسائل",
+  "settings" : "الإعدادات",
+
+  "semester" : "الفصل الدراسي",
+
+  "semester_overlap_message" : "نطاق التاريخ المحدد يتداخل مع فصل دراسي آخر.",
+
+  "Search" : "بحث",
+
+  "Ascending" : "تصاعدي",
+  "Descending" : "تنازلي",
+
+  "Are you sure?" : "هل أنت متأكد؟",
+  "You won't be able to revert this!" : "لن تتمكن من التراجع عن هذا!",
+  "Confirm!" : "تأكيد!",
+  "Yes, delete it!" : "نعم، احذف!",
+  "Remove Class Teacher!" : "إزالة معلم القسم!",
+
+  "JSON" : "JSON",
+  "XML" : "XML",
+  "PNG" : "PNG",
+  "CSV" : "CSV",
+  "TXT" : "TXT",
+  "SQL" : "SQL",
+  "MS-Word" : "MS-Word",
+  "MS-Excel" : "MS-Excel",
+  "MS-Excel (OpenXML)" : "MS-Excel (OpenXML)",
+  "MS-Powerpoint" : "MS-Powerpoint",
+  "PDF" : "PDF",
+
+  "paystack" : "بايستاك",
+  "paystack_public_key" : "المفتاح العام لـ Paystack",
+  "paystack_secret_key" : "المفتاح السري لـ Paystack",
+  "paystack_payment_url" : "رابط الدفع لـ Paystack",
+
+  "web_settings" : "إعدادات الموقع",
+  "educational_programs" : "البرامج التعليمية",
+  "photos" : "الصور",
+  "videos" : "الفيديوهات",
+  "faqs" : "الأسئلة الشائعة",
+  "events" : "الفعاليات",
+
+  "slider_type" : "نوع السلايدر",
+  "app" : "التطبيق",
+  "web" : "الموقع",
+  "both" : "كلاهما",
+
+  "content_settings" : "إعدادات المحتوى",
+  "section_title" : "عنوان القسم",
+  "heading" : "العنوان",
+  "content" : "المحتوى",
+
+  "educational_program" : "برنامج تعليمي",
+  "youtube_url" : "رابط يوتيوب",
+  "phone" : "الهاتف",
+  "attachment" : "مرفق",
+
+  "to" : "إلى",
+  "cc/bcc" : "نسخة / نسخة مخفية",
+  "send" : "إرسال",
+  "compose" : "إنشاء",
+
+  "theme" : "الثيم",
+  "secondary" : "ثانوي",
+  "about-us" : "من نحن",
+
+  "student_parent_app" : "تطبيق الطالب وولي الأمر",
+  "android_demo" : "عرض أندرويد",
+  "ios_demo" : "عرض iOS",
+  "teacher_app" : "تطبيق المعلم",
+
+  "photos_details" : "تفاصيل الصور",
+  "gallery" : "المعرض",
+
+  "useful_links" : "روابط مفيدة",
+  "quick_links" : "روابط سريعة",
+
+  "enrolled" : "مسجل",
+  "expert" : "خبير",
+  "student" : "طالب",
+  "teachers" : "المعلمون",
+
+  "contact_info" : "معلومات التواصل",
+  "phone_number" : "رقم الهاتف",
+  "address" : "العنوان",
+  "mail_us" : "راسلنا",
+
+  "facebook" : "فيسبوك",
+  "instagram" : "إنستغرام",
+  "linkedin" : "لينكدإن",
+
+  "social" : "اجتماعي",
+  "links" : "روابط",
+
+  "single" : "مفرد",
+  "multiple" : "متعدد",
+  "add_more" : "إضافة المزيد",
+
+  "timing" : "التوقيت",
+  "tag" : "وسم",
+  "staff" : "الطاقم",
+  "management" : "الإدارة",
+
+  "choiceable" : "قابل للاختيار",
+  "base" : "أساسي",
+
+  "razorpay" : "ريزورباي",
+  "configration" : "الإعدادات",
+
+  "stripe" : "سترايب",
+  "stripe_publishable_key" : "المفتاح العام لـ Stripe",
+  "stripe_webhook_secret" : "Webhook السري لـ Stripe",
+  "stripe_secret_key" : "المفتاح السري لـ Stripe",
+
+  "due_charges" : "الرسوم المستحقة",
+  "other_fees" : "رسوم أخرى",
+
+  "eg_currency_symbol_₹" : "مثال: ₹",
+  "eg_currency_code_inr" : "مثال: INR",
+
+  "no." : "رقم",
+  "table" : "جدول",
+  "grid" : "شبكة",
+
+  "order_id" : "معرّف الطلب",
+  "payment_intent_id" : "معرّف نية الدفع",
+  "payment_id" : "معرّف الدفع",
+  "payment_signature" : "توقيع الدفع",
+  "transaction_payment_id" : "معرّف معاملة الدفع",
+  "fee_receipt" : "إيصال الرسوم",
+
+  "webhook_url" : "رابط Webhook",
+  "razoray_webhook_secret" : "Webhook السري لـ Razorpay",
+
+  "please_fill_all_roll_numbers_data" : "يرجى إدخال جميع أرقام الترتيب",
+  "roll_number_already_exists_of_number" : "رقم الترتيب موجود بالفعل",
+
+  "in_minutes" : "بالدقائق",
+
+  "add_online_exam_questions" : "إضافة أسئلة امتحان إلكتروني",
+  "question_type" : "نوع السؤال",
+  "simple_question" : "سؤال بسيط",
+  "equation_based" : "معتمد على معادلة",
+
+  "add_questions" : "إضافة أسئلة",
+  "add_option" : "إضافة خيار",
+  "option" : "خيار",
+
+  "question_is_required" : "السؤال مطلوب",
+  "all_options_are_required" : "جميع الخيارات مطلوبة",
+  "add_new_question" : "إضافة سؤال جديد",
+  "marks_are_required" : "العلامات مطلوبة",
+
+  "invalid_online_exam_id" : "معرّف الامتحان غير صالح",
+  "invalid_question_id" : "معرّف السؤال غير صالح",
+  "invalid_option_id" : "معرّف الخيار غير صالح",
+
+  "exam_not_started_yet" : "الامتحان لم يبدأ بعد",
+
+  "Kindly configure the cron job on your server to execute the URL every day, this will facilitate the regular delete old chat messages with files" :
+  "يرجى إعداد مهمة Cron على الخادم لتشغيل الرابط يوميًا، مما يساعد على حذف رسائل الدردشة القديمة مع الملفات بشكل منتظم",
+
+  "Our Events and News" : "فعالياتنا وأخبارنا",
+  "Our Expert Teacher" : "معلمونا الخبراء",
+  "Our Photo" : "صورنا",
+  "Our Videos" : "فيديوهاتنا",
+
+  "Pagination Navigation" : "التنقل بين الصفحات",
+  "Please confirm your password before continuing." : "يرجى تأكيد كلمة المرور قبل المتابعة.",
+
+  "Purchase Code" : "رمز الشراء",
+  "Radio Button" : "زر اختيار",
+
+  "Select Semester" : "اختيار الفصل الدراسي",
+  "Send Password Reset Link" : "إرسال رابط إعادة تعيين كلمة المرور",
+
+  "Toggle navigation" : "تبديل التنقل",
+
+  "absent_days" : "أيام الغياب",
+  "class_section_id" : "معرّف القسم",
+
+  "due" : "مستحق",
+  "end_month" : "نهاية الشهر",
+  "file" : "ملف",
+
+  "flutterwave" : "Flutterwave",
+  "flutterwave_encryption_key" : "مفتاح تشفير Flutterwave",
+  "flutterwave_public_key" : "المفتاح العام لـ Flutterwave",
+  "flutterwave_secret_key" : "المفتاح السري لـ Flutterwave",
+
+  "leaves" : "الإجازات",
+  "live_class_url" : "رابط الحصة المباشرة",
+
+  "manage_semester" : "إدارة الفصل الدراسي",
+
+  "online_registrations" : "التسجيلات الإلكترونية",
+
+  "pagination.next" : "التالي",
+  "pagination.previous" : "السابق",
+
+  "results" : "النتائج",
+  "topic" : "الموضوع",
+  "total_days" : "إجمالي الأيام",
+
+  "who_we_are" : "من نحن",
+
+  "Advanced search" : "بحث متقدم",
+  "Clear Search" : "مسح البحث",
+  "Export data" : "تصدير البيانات",
+  "Fullscreen" : "ملء الشاشة",
+
+  "Loading, please wait" : "جارٍ التحميل، يرجى الانتظار",
+
+  "Print" : "طباعة",
+  "Refresh" : "تحديث",
+
+  "next page" : "الصفحة التالية",
+  "previous page" : "الصفحة السابقة",
+
+  "rows" : "صفوف",
+  "total rows" : "إجمالي الصفوف",
+
+  "Sort" : "ترتيب",
+  "Sort by" : "ترتيب حسب",
+
+  "Show pagination" : "إظهار الصفحات",
+  "Hide pagination" : "إخفاء الصفحات"
+}
+
+
