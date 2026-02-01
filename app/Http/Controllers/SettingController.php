@@ -209,7 +209,7 @@ class SettingController extends Controller
             $timezone = Settings::select('message')->where('type', 'time_zone')->pluck('message')->first();
             $login_image = Settings::select('message')->where('type', 'login_image')->pluck('message')->first();
             $recaptcha_site_key = Settings::select('message')->where('type', 'recaptcha_site_key')->pluck('message')->first();
-            $recaptcha_secret_key = Settings::select('message')->where('type', 'recaptcha_secret_ke')->pluck('message')->first();
+            $recaptcha_secret_key = Settings::select('message')->where('type', 'recaptcha_secret_key')->pluck('message')->first();
 
             $env_update = changeEnv([
                 'LOGO1' => $logo1,
