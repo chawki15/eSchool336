@@ -118,13 +118,23 @@ function changeEnv($data = array())
 
         // Read .env-file
         $env = file_get_contents(base_path() . '/.env');
-        // Split string on every " " and write into array
-        $env = explode(PHP_EOL, $env);
+        if ($env === false) {
+            return false;
+        }
+        // Split string on any line ending and write into array
+        $env = preg_split('/\R/', $env);
+        if ($env === false) {
+            return false;
+        }
         // $env = preg_split('/\s+/', $env);
+        $temp_env_keys = [];
         foreach ($env as $env_key => $env_value) {
-            $entry = explode("=", $env_value);
+            $trimmed_value = trim($env_value);
+            if ($trimmed_value === '' || strpos($trimmed_value, '#') === 0) {
+                continue;
+            }
+            $entry = explode("=", $env_value, 2);
             $temp_env_keys[] = $entry[0];
-
         }
         // Loop through given data
         foreach ((array)$data as $key => $value) {
@@ -133,17 +143,21 @@ function changeEnv($data = array())
             if (in_array($key, $temp_env_keys)) {
                 // Loop through .env-data
                 foreach ($env as $env_key => $env_value) {
+                    $trimmed_value = trim($env_value);
+                    if ($trimmed_value === '' || strpos($trimmed_value, '#') === 0) {
+                        continue;
+                    }
                     // Turn the value into an array and stop after the first split
                     // So it's not possible to split e.g. the App-Key by accident
-                    $entry = explode("=", $env_value);
+                    $entry = explode("=", $env_value, 2);
                     // // Check, if new key fits the actual .env-key
                     if ($entry[0] == $key) {
 
                         // If yes, overwrite it with the new one
 
-                        if($key != 'APP_NAME'){
+                        if ($key != 'APP_NAME') {
                             $env[$env_key] = $key . "=" . str_replace('"', '', $value);
-                        }else{
+                        } else {
                             $env[$env_key] = $key . "=" . $value;
                         }
 
@@ -160,7 +174,9 @@ function changeEnv($data = array())
         $env = implode("\n", $env);
 
         // And overwrite the .env with the new data
-        file_put_contents(base_path() . '/.env', $env);
+        if (file_put_contents(base_path() . '/.env', $env) === false) {
+            return false;
+        }
 
         return true;
     } else {

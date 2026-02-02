@@ -85,141 +85,99 @@ class SettingController extends Controller
         ];
         try {
             foreach ($settings as $row) {
-                if (Settings::where('type', $row)->exists()) {
-                    if ($row == 'session_year') {
-                        $get_id = Settings::select('message')->where('type', 'session_year')->pluck('message')->first();
+                if ($row == 'session_year') {
+                    $get_id = Settings::select('message')->where('type', 'session_year')->pluck('message')->first();
 
-                        $old_year = SessionYear::find($get_id);
-                        if (!empty($old_year)) {
-                            $old_year->default = 0;
-                            $old_year->save();
-                        }
-
-                        $session_year = SessionYear::find($request->$row);
-                        $session_year->default = 1;
-                        $session_year->save();
+                    $old_year = SessionYear::find($get_id);
+                    if (!empty($old_year)) {
+                        $old_year->default = 0;
+                        $old_year->save();
                     }
 
-                    // removing the double unnecessary double quotes in school name
-                    if ($row == 'school_name') {
-                        $data = [
-                            'message' => str_replace('"', '', $request->$row)
-                        ];
-                    } else {
-                        $data = [
-                            'message' => $request->$row
-                        ];
-                    }
-                    Settings::where('type', $row)->update($data);
-                } else {
-                    $setting = new Settings();
-                    $setting->type = $row;
-                    $setting->message = $row == 'school_name' ? str_replace('"', '', $request->$row) : $request->$row;
-                    $setting->save();
+                    $session_year = SessionYear::find($request->$row);
+                    $session_year->default = 1;
+                    $session_year->save();
                 }
+                $message = $row == 'school_name' ? str_replace('"', '', $request->$row) : $request->$row;
+                Settings::updateOrCreate(
+                    ['type' => $row],
+                    ['message' => $message]
+                );
             }
-
-            // for online payment data
-            if (Settings::where('type', 'online_payment')->exists()) {
-                $data = [
-                    'message' => $request->online_payment
-                ];
-                Settings::where('type', 'online_payment')->update($data);
-            } else {
-                $setting = new Settings();
-                $setting->type = 'online_payment';
-                $setting->message = $request->online_payment;
-                $setting->save();
-            }
-            // end of online payment data
 
             if ($request->hasFile('logo1')) {
-                if (Settings::where('type', 'logo1')->exists()) {
-                    $get_id = Settings::select('message')->where('type', 'logo1')->pluck('message')->first();
-                    if (Storage::disk('public')->exists($get_id)) {
-                        Storage::disk('public')->delete($get_id);
-                    }
-                    $data = [
-                        'message' => $request->file('logo1')->store('logo', 'public')
-                    ];
-                    Settings::where('type', 'logo1')->update($data);
-                } else {
-                    $setting = new Settings();
-                    $setting->type = 'logo1';
-                    $setting->message = $request->file('logo1')->store('logo', 'public');
-                    $setting->save();
+                $get_id = Settings::select('message')->where('type', 'logo1')->pluck('message')->first();
+                if (!empty($get_id) && Storage::disk('public')->exists($get_id)) {
+                    Storage::disk('public')->delete($get_id);
                 }
+                Settings::updateOrCreate(
+                    ['type' => 'logo1'],
+                    ['message' => $request->file('logo1')->store('logo', 'public')]
+                );
             }
             if ($request->hasFile('logo2')) {
-                if (Settings::where('type', 'logo2')->exists()) {
-                    $get_id = Settings::select('message')->where('type', 'logo2')->pluck('message')->first();
-                    if (Storage::disk('public')->exists($get_id)) {
-                        Storage::disk('public')->delete($get_id);
-                    }
-                    $data = [
-                        'message' => $request->file('logo2')->store('logo', 'public')
-                    ];
-                    Settings::where('type', 'logo2')->update($data);
-                } else {
-                    $setting = new Settings();
-                    $setting->type = 'logo2';
-                    $setting->message = $request->file('logo2')->store('logo', 'public');
-                    $setting->save();
+                $get_id = Settings::select('message')->where('type', 'logo2')->pluck('message')->first();
+                if (!empty($get_id) && Storage::disk('public')->exists($get_id)) {
+                    Storage::disk('public')->delete($get_id);
                 }
+                Settings::updateOrCreate(
+                    ['type' => 'logo2'],
+                    ['message' => $request->file('logo2')->store('logo', 'public')]
+                );
             }
             if ($request->hasFile('favicon')) {
-                if (Settings::where('type', 'favicon')->exists()) {
-                    $get_id = Settings::select('message')->where('type', 'favicon')->pluck('message')->first();
-                    if (Storage::disk('public')->exists($get_id)) {
-                        Storage::disk('public')->delete($get_id);
-                    }
-                    $data = [
-                        'message' => $request->file('favicon')->store('logo', 'public')
-                    ];
-                    Settings::where('type', 'favicon')->update($data);
-                } else {
-                    $setting = new Settings();
-                    $setting->type = 'favicon';
-                    $setting->message = $request->file('favicon')->store('logo', 'public');
-                    $setting->save();
+                $get_id = Settings::select('message')->where('type', 'favicon')->pluck('message')->first();
+                if (!empty($get_id) && Storage::disk('public')->exists($get_id)) {
+                    Storage::disk('public')->delete($get_id);
                 }
+                Settings::updateOrCreate(
+                    ['type' => 'favicon'],
+                    ['message' => $request->file('favicon')->store('logo', 'public')]
+                );
             }
             if ($request->hasFile('login_image')) {
-                if (Settings::where('type', 'login_image')->exists()) {
-                    $get_id = Settings::select('message')->where('type', 'login_image')->pluck('message')->first();
-                    if (Storage::disk('public')->exists($get_id)) {
-                        Storage::disk('public')->delete($get_id);
-                    }
-                    $data = [
-                        'message' => $request->file('login_image')->store('logo', 'public')
-                    ];
-                    Settings::where('type', 'login_image')->update($data);
-                } else {
-                    $setting = new Settings();
-                    $setting->type = 'login_image';
-                    $setting->message = $request->file('login_image')->store('logo', 'public');
-                    $setting->save();
+                $get_id = Settings::select('message')->where('type', 'login_image')->pluck('message')->first();
+                if (!empty($get_id) && Storage::disk('public')->exists($get_id)) {
+                    Storage::disk('public')->delete($get_id);
                 }
+                Settings::updateOrCreate(
+                    ['type' => 'login_image'],
+                    ['message' => $request->file('login_image')->store('logo', 'public')]
+                );
             }
 
-            $logo1 = Settings::select('message')->where('type', 'logo1')->pluck('message')->first();
-            $logo2 = Settings::select('message')->where('type', 'logo2')->pluck('message')->first();
-            $favicon = Settings::select('message')->where('type', 'favicon')->pluck('message')->first();
-            $app_name = Settings::select('message')->where('type', 'school_name')->pluck('message')->first();
-            $timezone = Settings::select('message')->where('type', 'time_zone')->pluck('message')->first();
-            $login_image = Settings::select('message')->where('type', 'login_image')->pluck('message')->first();
-            $recaptcha_site_key = Settings::select('message')->where('type', 'recaptcha_site_key')->pluck('message')->first();
-            $recaptcha_secret_key = Settings::select('message')->where('type', 'recaptcha_secret_key')->pluck('message')->first();
+            $envSettings = Settings::whereIn('type', [
+                'logo1',
+                'logo2',
+                'favicon',
+                'school_name',
+                'time_zone',
+                'login_image',
+                'recaptcha_site_key',
+                'recaptcha_secret_key'
+            ])->pluck('message', 'type');
+            $logo1 = $envSettings->get('logo1') ?? '';
+            $logo2 = $envSettings->get('logo2') ?? '';
+            $favicon = $envSettings->get('favicon') ?? '';
+            $app_name = $envSettings->get('school_name') ?? '';
+            $timezone = $envSettings->get('time_zone') ?? '';
+            $login_image = $envSettings->get('login_image') ?? '';
+            $recaptcha_site_key = $envSettings->get('recaptcha_site_key') ?? '';
+            $recaptcha_secret_key = $envSettings->get('recaptcha_secret_key') ?? '';
+            $normalizedAppName = preg_replace('/[\r\n]+/', ' ', (string) $app_name);
+            $normalizedTimezone = preg_replace('/[\r\n]+/', ' ', (string) $timezone);
+            $normalizedSiteKey = trim((string) $recaptcha_site_key);
+            $normalizedSecretKey = trim((string) $recaptcha_secret_key);
 
             $env_update = changeEnv([
                 'LOGO1' => $logo1,
                 'LOGO2' => $logo2,
                 'FAVICON' => $favicon,
                 'LOGIN_IMAGE' => $login_image,
-                'APP_NAME' => '"' . $app_name . '"',
-                'TIMEZONE' => "'" . $timezone . "'",
-                'SITE_KEY' =>  $recaptcha_site_key,
-                'SECRET_KEY' => $recaptcha_secret_key
+                'APP_NAME' => '"' . $normalizedAppName . '"',
+                'TIMEZONE' => "'" . $normalizedTimezone . "'",
+                'SITE_KEY' =>  $normalizedSiteKey,
+                'SECRET_KEY' => $normalizedSecretKey
 
             ]);
             if ($env_update) {
@@ -293,21 +251,13 @@ class SettingController extends Controller
 
         try {
             foreach ($settings as $row) {
-                if (Settings::where('type', $row)->exists()) {
-
-                    $data = [
-                        'message' => $request->$row
-                    ];
-                    Settings::where('type', $row)->update($data);
-                } else {
-                    $setting = new Settings();
-                    $setting->type = $row;
-                    $setting->message = $request->$row;
-                    $setting->save();
-                }
-                Settings::updateOrInsert(
+                Settings::updateOrCreate(
+                    ['type' => $row],
+                    ['message' => $request->$row]
+                );
+                Settings::updateOrCreate(
                     ['type' => 'email_configration_verification'],
-                    ['type' => 'email_configration_verification', 'message' => 0]
+                    ['message' => 0]
                 );
             }
             $env_update = changeEnv([
@@ -475,20 +425,16 @@ class SettingController extends Controller
         }
         $type = $request->type;
         $message = $request->message;
-        $id = Settings::select('id')->where('type', $type)->pluck('id')->first();
-        if (isset($id) && !empty($id)) {
-            $setting = Settings::find($id);
-            $setting->message = $message;
-            $setting->save();
+        $setting = Settings::updateOrCreate(
+            ['type' => $type],
+            ['message' => $message]
+        );
+        if (!$setting->wasRecentlyCreated) {
             $response = array(
                 'error' => false,
                 'message' => trans('data_update_successfully'),
             );
         } else {
-            $setting = new Settings();
-            $setting->type = $type;
-            $setting->message = $message;
-            $setting->save();
             $response = array(
                 'error' => false,
                 'message' => trans('data_store_successfully'),
@@ -551,18 +497,10 @@ class SettingController extends Controller
         try {
 
             foreach ($settings as $row) {
-                if (Settings::where('type', $row)->exists()) {
-
-                    $data = [
-                        'message' => $request->$row
-                    ];
-                    Settings::where('type', $row)->update($data);
-                } else {
-                    $setting = new Settings();
-                    $setting->type = $row;
-                    $setting->message = $request->$row;
-                    $setting->save();
-                }
+                Settings::updateOrCreate(
+                    ['type' => $row],
+                    ['message' => $request->$row]
+                );
             }
 
             $response = array(
@@ -595,40 +533,26 @@ class SettingController extends Controller
         $settings = ['sender_id', 'project_id'];
         try {
             foreach ($settings as $row) {
-                if (Settings::where('type', $row)->exists()) {
-                    $data = [
-                        'message' => $request->$row
-                    ];
-                    Settings::where('type', $row)->update($data);
-                } else {
-                    $setting = new Settings();
-                    $setting->type = $row;
-                    $setting->message = $request->$row;
-                    $setting->save();
-                }
+                Settings::updateOrCreate(
+                    ['type' => $row],
+                    ['message' => $request->$row]
+                );
             }
             if ($request->hasFile('service_account_file')) {
                 $serviceAccountFile = $request->file('service_account_file');
 
-                if (Settings::where('type', 'service_account_file')->exists()) {
-                    $get_id = Settings::where('type', 'service_account_file')->value('message');
+                $get_id = Settings::where('type', 'service_account_file')->value('message');
 
-                    // Delete the existing file
-                    if (Storage::disk('public')->exists($get_id)) {
-                        Storage::disk('public')->delete($get_id);
-                    }
-
-                    // Store the new file with its original name
-                    $data = [
-                        'message' => $serviceAccountFile->storeAs('firebase', $serviceAccountFile->getClientOriginalName(), 'public')
-                    ];
-                    Settings::where('type', 'service_account_file')->update($data);
-                } else {
-                    $setting = new Settings();
-                    $setting->type = 'service_account_file';
-                    $setting->message = $serviceAccountFile->storeAs('firebase', $serviceAccountFile->getClientOriginalName(), 'public');
-                    $setting->save();
+                // Delete the existing file
+                if (!empty($get_id) && Storage::disk('public')->exists($get_id)) {
+                    Storage::disk('public')->delete($get_id);
                 }
+
+                $storedPath = $serviceAccountFile->store('firebase', 'public');
+                Settings::updateOrCreate(
+                    ['type' => 'service_account_file'],
+                    ['message' => $storedPath]
+                );
             }
 
             $sender_id = Settings::select('message')->where('type', 'sender_id')->pluck('message')->first();
@@ -684,17 +608,10 @@ class SettingController extends Controller
         $settings = ['max_files_or_images_in_one_message', 'max_file_size_in_bytes', 'max_characters_in_text_message', 'automatically_messages_removed_days', 'info-link'];
         try {
             foreach ($settings as $row) {
-                if (Settings::where('type', $row)->exists()) {
-                    $data = [
-                        'message' => $request->$row
-                    ];
-                    Settings::where('type', $row)->update($data);
-                } else {
-                    $setting = new Settings();
-                    $setting->type = $row;
-                    $setting->message = $request->$row;
-                    $setting->save();
-                }
+                Settings::updateOrCreate(
+                    ['type' => $row],
+                    ['message' => $request->$row]
+                );
             }
             $response = array(
                 'error' => false,
@@ -736,21 +653,25 @@ class SettingController extends Controller
             $from_date = date('Y-m-d', strtotime($request->from_date));
             $to_date = date('Y-m-d', strtotime($request->to_date));
 
-            $chat_messages = ChatMessage::with('file')->whereDate('date', '>=', $from_date)->whereDate('date', '<=', $to_date)->get();
-
-            foreach ($chat_messages as $message) {
-                if ($message->file) {
-                    foreach ($message->file as $file) {
-                        if ($file) {
-                            if (Storage::disk('public')->exists($file->file_name)) {
-                                Storage::disk('public')->delete($file->file_name);
+            ChatMessage::with('file')
+                ->whereDate('date', '>=', $from_date)
+                ->whereDate('date', '<=', $to_date)
+                ->orderBy('id')
+                ->chunkById(100, function ($chat_messages) {
+                    foreach ($chat_messages as $message) {
+                        if ($message->file) {
+                            foreach ($message->file as $file) {
+                                if ($file) {
+                                    if (Storage::disk('public')->exists($file->file_name)) {
+                                        Storage::disk('public')->delete($file->file_name);
+                                    }
+                                    $file->delete();
+                                }
                             }
-                            $file->delete();
                         }
+                        $message->delete();
                     }
-                }
-                $message->delete();
-            }
+                });
 
             $response = array(
                 'error' => false,
@@ -774,21 +695,24 @@ class SettingController extends Controller
 
             $date = now()->subDays($automatically_messages_removed_days);
 
-            $chat_messages = ChatMessage::with('file')->whereDate('date', '<', $date)->get();
-
-            foreach ($chat_messages as $message) {
-                if ($message->file) {
-                    foreach ($message->file as $file) {
-                        if ($file) {
-                            if (Storage::disk('public')->exists($file->file_name)) {
-                                Storage::disk('public')->delete($file->file_name);
+            ChatMessage::with('file')
+                ->whereDate('date', '<', $date)
+                ->orderBy('id')
+                ->chunkById(100, function ($chat_messages) {
+                    foreach ($chat_messages as $message) {
+                        if ($message->file) {
+                            foreach ($message->file as $file) {
+                                if ($file) {
+                                    if (Storage::disk('public')->exists($file->file_name)) {
+                                        Storage::disk('public')->delete($file->file_name);
+                                    }
+                                    $file->delete();
+                                }
                             }
-                            $file->delete();
                         }
+                        $message->delete();
                     }
-                }
-                $message->delete();
-            }
+                });
 
             $response = array(
                 'error' => false,
